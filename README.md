@@ -35,5 +35,6 @@ MYSQL container command: <> --> these items can be replace during runtime as per
 4. then we can execute any cli commands like the following one -> show databases; create table; select;alter
 
 We can integrate spring boot with mysql container with the below docker command and appropriate application property files to be changed
+--link is the argument used to link both containers
 
 1. docker run -p 8086:8086 --name springboot-mysql-container --link mysql-standalone-local:mysql -d docker-springboot-mysql --> we can use the link command to link one container to the another one
